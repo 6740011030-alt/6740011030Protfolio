@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model & Layout</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0e5ec; /* สีพื้นหลังแบบ Soft UI */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* --- โค้ด CSS ของคุณโฟล์ค --- */
+        .profile-card {
+            /* 1. กำหนดความกว้างสูงสุดและจัดกึ่งกลาง */
+            max-width: 300px;
+            margin: auto; 
+
+            /* 2. เพิ่มระยะห่างภายใน */
+            padding: 20px;
+
+            /* 3. เพิ่มขอบโค้ง */
+            border-radius: 10px;
+
+            /* 4. เปลี่ยนสีพื้นหลัง */
+            background-color: #ffffff;
+
+            /* 5. เพิ่มเงาให้ดูมีมิติ */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            /* 7. จัดข้อความกึ่งกลาง */
+            text-align: center;
+        }
+
+        .profile-image {
+            /* 6. รูปภาพวงกลม */
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+
+            /* 8. ระยะห่างด้านล่าง */
+            margin-bottom: 15px;
+            
+            /* เพิ่มเส้นขอบเล็กน้อยเพื่อให้ตัดกับพื้นหลัง */
+            border: 4px solid #f0f0f0;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/300" alt="รูปโปรไฟล์" class="profile-image">
+        <h3>ธัญเทพ อนันตมาศ</h3>
+        <p>Student @ PSU Surat Thani</p>
+        <p>งานอดิเรก: เล่นเกม & เขียนโค้ด</p>
+    </div>
+
+</body>
+<div class="action-buttons">
+    <a href="../index.html" class="action-btn secondary">กลับหน้าหลัก</a>
+</html>

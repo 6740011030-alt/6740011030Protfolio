@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+     <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* --- ส่วนสำคัญ: Flexbox Container --- */
+        nav {
+            background-color: #333; /* สีพื้นหลังเมนู */
+            color: #fff;
+            padding: 15px 30px;
+            
+            /* หัวใจของ Flexbox: จัดให้ Logo อยู่ซ้าย เมนูอยู่ขวา */
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffc107; /* สีเหลืองเด่นๆ */
+            cursor: pointer;
+        }
+
+        /* --- ส่วนรายการเมนู --- */
+        .nav-links {
+            list-style: none; /* เอาจุด bullet ออก */
+            margin: 0;
+            padding: 0;
+            
+            /* Flexbox ซ้อน Flexbox: จัดเมนูเรียงแนวนอน */
+            display: flex; 
+            gap: 20px; /* เว้นระยะห่างระหว่างเมนู */
+        }
+
+        .nav-links li {
+            cursor: pointer;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        .nav-links li:hover {
+            color: #ffc107;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MyBrand</div>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div style="text-align: center; margin-top: 50px; color: #666;">
+        <h3>ตัวอย่างการใช้ Display: Flex</h3>
+        <p>ลองย่อ-ขยายหน้าจอเพื่อดูการจัดวาง</p>
+    </div>
+
+</body>
+<div class="action-buttons">
+    <a href="../index.html" class="action-btn secondary">กลับหน้าหลัก</a>
+</html>

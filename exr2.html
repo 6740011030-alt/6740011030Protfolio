@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ของฉัน - ข้อที่ 2</title>
+    <style>
+        /* ตกแต่งพื้นหลังและฟอนต์ */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* การ์ดโปรไฟล์ */
+        .profile-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 400px;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* รูปโปรไฟล์วงกลม */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #007bff;
+            margin-bottom: 20px;
+        }
+
+        /* หัวข้อ */
+        h1 { color: #333; margin-bottom: 5px; font-size: 24px; }
+        h2 { color: #007bff; font-size: 18px; margin-top: 25px; border-bottom: 2px solid #eee; padding-bottom: 10px; display: inline-block; }
+        p { color: #666; line-height: 1.6; font-size: 14px; }
+
+        /* ตกแต่งรายการ (Lists) ซึ่งเป็นหัวใจของข้อ 2 */
+        ul {
+            text-align: left;
+            background-color: #f9f9f9;
+            padding: 20px 20px 20px 40px; /* เว้นซ้ายเยอะหน่อยสำหรับ Bullet */
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #444;
+            font-weight: 500;
+        }
+        
+        /* เปลี่ยนสี Bullet Points */
+        li::marker { color: #007bff; font-size: 1.2em; }
+
+        /* ปุ่มลิงก์ */
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 0 5px;
+            transition: 0.3s;
+        }
+        .social-links a.fb { background-color: #1877f2; }
+        .social-links a.yt { background-color: #ff0000; }
+        .social-links a:hover { opacity: 0.8; transform: translateY(-2px); display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์ของโฟล์ค" class="profile-img">
+        
+        <h1>ธัญเทพ อนันตมาศ (โฟล์ค)</h1>
+        <p>นักศึกษา IT มหาวิทยาลัยสงขลานครินทร์</p>
+
+        <h2>เกี่ยวกับฉัน</h2>
+        <p>
+            ผมชื่อโฟล์ค อายุ 20 ปี ปัจจุบันเรียนสาขา IT เป็นคนง่ายๆ และมีพลังเวลาที่ได้ทำในสิ่งที่ชอบครับ
+        </p>
+
+        <h2>งานอดิเรก (Unordered List)</h2>
+        <ul>
+            <li>🎮 เล่นเกม (Rainbow Six Siege)</li>
+            <li>🏀 เล่นบาสเกตบอล</li>
+            <li>📺 ดู YouTube หาความรู้</li>
+            <li>💻 ฝึกเขียนโปรแกรม</li>
+        </ul>
+
+        <h2>ช่องทางการติดต่อ</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" class="fb">Facebook</a>
+            <a href="https://www.youtube.com" target="_blank" class="yt">YouTube</a>
+        </div>
+    </div>
+<div class="action-buttons">
+    <a href="../index.html" class="action-btn secondary">กลับหน้าหลัก</a>
+</div>
+</body>
+</html>

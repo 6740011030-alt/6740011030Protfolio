@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ธัญเทพ อนันตมาศ | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Thanyathep Portfolio</div>
+            <ul>
+                <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                <li><a href="#skills">ทักษะ</a></li>
+                <li><a href="#projects">ผลงาน</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="profile-container">
+                <img src="study.jpg" alt="รูปโปรไฟล์โฟล์ค" class="profile-avatar">
+                <h1>ธัญเทพ อนันตมาศ (โฟล์ค)</h1>
+                <div class="exercise-description">
+    
+</div>
+                <p>นักศึกษา IT มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี</p>
+                <div class="button-group">
+                    <a href="https://www.facebook.com/thanyathep.anantamat" target="_blank">
+                        <button class="modern-button">ติดต่อทาง Facebook</button>
+                    </a>
+                    <a href="#skills">
+                        <button class="modern-button btn-secondary">ดูทักษะของฉัน</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>สวัสดีครับ ผมอายุ 20 ปี กำลังศึกษาที่คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม ม.อ. สุราษฎร์ธานี 
+               งานอดิเรกของผมคือการเล่นเกม (Arena of Valor), ออกกำลังกาย และดู YouTube ครับ</p>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>ทักษะวิชาชีพ (Professional Skills)</h2>
+            <div class="skill-item">
+                <div class="skill-info"><span>HTML & CSS</span><span>80%</span></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 80%; background: #007bff;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info"><span>IT Troubleshooting</span><span>70%</span></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 70%; background: #28a745;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>ผลงานของฉัน (My Projects)</h2>
+    <div class="project-nav">
+        <a href="#work1">ข้อ 1</a> <a href="#work2">ข้อ 2</a> <a href="#work3">ข้อ 3</a> <a href="#work4">ข้อ 4</a>
+        <a href="#work5">ข้อ 5</a> <a href="#work6">ข้อ 6</a> <a href="#work7">ข้อ 7</a> <a href="#work8">ข้อ 8</a>
+    </div>
+
+    <div class="projects-grid">
+        <article id="work1" class="project-item">
+            <h3>ข้อที่ 1: การสร้างโครงสร้าง HTML พื้นฐาน</h3>
+            <img src="ex1.png" alt="ตัวอย่างงานข้อ 1" class="project-img">
+            <div class="code-window">
+                <div class="code-header"><span>index.html</span></div>
+                
+                <pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="th"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;บล็อกโพสต์ของฉัน&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;main&gt;
+        &lt;h1&gt;วันแรกของการเรียนรู้ HTML&lt;/h1&gt;
+
+        &lt;h2&gt;ทำไม HTML ถึงสำคัญ&lt;/h2&gt;
+        &lt;p&gt;HTML เป็นโครงสร้างหลักของเว็บไซต์ทุกแห่งบนโลก ถ้าเปรียบกับการสร้างบ้าน HTML ก็คือเสาเข็มและโครงเหล็กนั่นเอง&lt;/p&gt;
+        &lt;p&gt;การเข้าใจ HTML จะช่วยให้เราต่อยอดไปเรียนรู้การแต่งหน้าตาเว็บด้วย CSS และทำให้เว็บทำงานได้ด้วย JavaScript&lt;/p&gt;
+
+        &lt;h3&gt;ขั้นตอนการเรียนรู้เบื้องต้น&lt;/h3&gt;
+        &lt;ol&gt;
+            &lt;li&gt;ศึกษาโครงสร้างพื้นฐานของ Tag&lt;/li&gt;
+            &lt;li&gt;ลองสร้างหน้าเว็บที่มีแต่ข้อความ&lt;/li&gt;
+            &lt;li&gt;ฝึกใส่รูปภาพและลิงก์เชื่อมโยง&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;h2&gt;สิ่งที่เราจะได้เรียนรู้&lt;/h2&gt;
+        &lt;p&gt;ในบทเรียนนี้เราจะได้ฝึกใช้ Tag สำคัญๆ เช่น การทำหัวข้อ การใส่ย่อหน้า และการจัดการรูปภาพเพื่อให้เว็บดูน่าสนใจ&lt;/p&gt;
+
+        &lt;h3&gt;แหล่งข้อมูลที่แนะนำ&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;W3Schools - แหล่งรวมบทเรียนเขียนเว็บ&lt;/li&gt;
+            &lt;li&gt;MDN Web Docs - คู่มือสำหรับนักพัฒนา&lt;/li&gt;
+            &lt;li&gt;YouTube ช่องสอนเขียนโปรแกรมต่างๆ&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;p&gt;
+            สนใจศึกษาเพิ่มเติมได้ที่: 
+            &lt;a href="https://www.w3schools.com" target="_blank"&gt;W3Schools Online Web Tutorials&lt;/a&gt;
+        &lt;/p&gt;
+
+        &lt;h3&gt;ภาพประกอบบทเรียน&lt;/h3&gt;
+        &lt;img src="https://via.placeholder.com/200" alt="รูปภาพตัวอย่างสำหรับบล็อกโพสต์"&gt;
+        
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;นี่คือการฝึกเขียน HTML ครั้งแรกของผม&lt;/p&gt;</code></pre>
+
+            </div>
+            <div class="action-buttons">
+    <a href="exr1.html" class="action-btn primary">ดูผลลัพธ์จริง</a>
+</div>
+        </article>
+    
+
+        <article id="work2" class="project-item">
+            <h3>ข้อที่ 2: การจัดการรายการ (Lists)</h3>
+            <img src="ex2.png" alt="ตัวอย่างงานข้อ 2" class="project-img">
+            <div class="code-window">
+                <div class="code-header"><span>index.html</span></div>
+                <pre><code>&lt;ul&gt;
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="th"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;โปรไฟล์ของฉัน&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;ธัญเทพ อนันตมาศ (โฟล์ค)&lt;/h1&gt;
+
+    &lt;img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์ของโฟล์ค"&gt;
+
+    &lt;h2&gt;เกี่ยวกับฉัน&lt;/h2&gt;
+    &lt;p&gt;
+        ผมชื่อตะวัน อายุ 20 ปี ปัจจุบันเป็นนักศึกษาคณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม สาขา IT 
+        มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานีครับ ผมเป็นคนง่ายๆ และมีพลังเวลาที่ได้ทำในสิ่งที่ชอบครับ
+    &lt;/p&gt;
+
+    &lt;h2&gt;งานอดิเรก&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;เล่นเกม (Rainbow Six Siege)&lt;/li&gt;
+        &lt;li&gt;เล่นบาสเกตบอล&lt;/li&gt;
+        &lt;li&gt;ดู YouTube เพื่อการผ่อนคลายและหาความรู้&lt;/li&gt;
+        &lt;li&gt;ฝึกเขียนโปรแกรมและพัฒนาทักษะด้าน IT&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h2&gt;ช่องทางการติดต่อ&lt;/h2&gt;
+    &lt;p&gt;
+        สามารถติดตามผมได้ที่: 
+        &lt;a href="https://www.facebook.com" target="_blank"&gt;Facebook ของผม&lt;/a&gt; หรือ 
+        &lt;a href="https://www.youtube.com" target="_blank"&gt;ช่อง YouTube ที่น่าสนใจ&lt;/a&gt;
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+            <div class="action-buttons">
+    <a href="exr2.html" class="action-btn primary">ดูผลลัพธ์จริง</a>
+
+</div>
+        </article>
+
+        <article id="work3" class="project-item">
+            <h3>ข้อที่ 3: การใส่รูปภาพและลิงก์</h3>
+            <img src="ex3.png" alt="ตัวอย่างงานข้อ 3" class="project-img">
+            <div class="code-window">
+                <div class="code-header"><span>index.html</span></div>
+                <pre><code>&lt;img src="profile.jpg" alt="Profile"<div class="code-display-window">
+    <div class="code-header">style.css</div>
+    <pre><code>/* กำหนดค่าการ์ดโปรไฟล์ */
+.profile-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* จัดกึ่งกลางรูปโปรไฟล์และทำเป็นวงกลม */
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* กำหนดขนาดและสีสำหรับชื่อ */
+.profile-name {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* กำหนดสีสำหรับคำอธิบาย */
+.profile-description {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+}</code></pre>
+</div>
+&lt;a href="https://facebook.com"&gt;Facebook&lt;/a&gt;</code></pre>
+            </div>
+            <div class="action-buttons">
+    <a href="exr3.html" class="action-btn primary">ดูผลลัพธ์จริง</a>
+</div>
+        </article>
+
+        <article id="work4" class="project-item">
+    <h3>ข้อที่ 4: การจัดกลุ่มด้วย Div และ Class</h3>
+    <img src="ex4.png" alt="ตัวอย่างงานข้อ 4" class="project-img">
+    
+    <div class="code-window">
+        <div class="code-header"><span>index.html</span></div>
+        <pre><code>&lt;div class="profile-card"&gt;
+    &lt;h1&gt;ธัญเทพ อนันตมาศ&lt;/h1&gt;
+    &lt;p&gt;นักศึกษา IT&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="code-window">
+        <div class="code-header"><span>style.css</span></div>
+        <pre><code>.profile-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}</code></pre>
+    </div>
+    <div class="action-buttons">
+    <a href="exr4.html" class="action-btn primary">ดูผลลัพธ์จริง</a>
+</article>
+
+        <article id="work5" class="project-item">
+    <h3>ข้อที่ 5: การตกแต่งปุ่มด้วย CSS</h3>
+    <img src="ex5.png" alt="ตัวอย่างงานข้อ 5" class="project-img">
+    
+    <div class="code-window">
+        <div class="code-header"><span>style.css</span></div>
+        <pre><code>/* เขียน CSS ของปุ่ม .modern-button ที่นี่ */
+.modern-button {
+    background-color: #007bff; /* 1. ตั้งค่าสีพื้นหลังเป็นสีน้ำเงินเข้ม */
+    color: #ffffff;            /* 2. ตั้งค่าสีตัวอักษรเป็นสีขาว */
+    padding: 10px 20px;       /* 3. เพิ่มระยะห่างภายใน บน-ล่าง 10px และ ซ้าย-ขวา 20px */
+    border-radius: 5px;        /* 4. ทำให้ขอบปุ่มมน 5px */
+    border: none;              /* 5. ลบเส้นขอบเริ่มต้นของปุ่มออก */
+    cursor: pointer;           /* 6. เปลี่ยนรูปแบเคอร์เซอร์เป็นรูปมือเมื่อนำเมาส์ไปชี้ */
+    
+    /* 8. เพิ่มการเปลี่ยนผ่าน (transition) ให้ดูนุ่มนวลในเวลา 0.3 วินาที */
+    transition: background-color 0.3s ease;
+    
+    /* ตกแต่งเพิ่มเติมเพื่อให้ดูทันสมัยขึ้น */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 7. เพิ่มเอฟเฟกต์เมื่อนำเมาส์ไปชี้ (hover) */
+.modern-button:hover {
+    background-color: #0056b3; /* เปลี่ยนสีพื้นหลังให้เข้มขึ้น */
+}</code></pre>
+    </div>
+    <div class="action-buttons">
+    <a href="exr5.html" class="action-btn primary">ดูผลลัพธ์จริง</a>
+</article>
+
+       <article id="work4" class="project-item">
+    <h3>ข้อที่ 6: การตกแต่งการ์ดโปรไฟล์ด้วย CSS</h3>
+    <img src="ex4.png" alt="ตัวอย่างงานข้อ 6" class="project-img">
+    
+    <div class="code-window">
+        <div class="code-header"><span>style.css</span></div>
+        <pre><code>.profile-card {
+    /* 1. กำหนดความกว้างสูงสุด 300px และจัดให้อยู่กึ่งกลาง */
+    max-width: 300px;
+    margin: auto; 
+
+    /* 2. เพิ่มระยะห่างภายใน (padding) 20px */
+    padding: 20px;
+
+    /* 3. เพิ่มขอบโค้ง (border-radius) 10px */
+    border-radius: 10px;
+
+    /* 4. เปลี่ยนสีพื้นหลังเป็นสีขาว (#ffffff) */
+    background-color: #ffffff;
+
+    /* 5. เพิ่มเงา (box-shadow) ให้การ์ดดูมีมิติ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* 7. จัดข้อความทั้งหมดภายในให้กึ่งกลาง */
+    text-align: center;
+}
+
+.profile-image {
+    /* 6. ทำให้รูปภาพโปรไฟล์เป็นวงกลม */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+    /* 8. กำหนดระยะห่างด้านล่าง (margin-bottom) ให้ดูโปร่งขึ้น */
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}</code></pre>
+    </div>
+    <div class="action-buttons">
+    <a href="exr6.html" class="action-btn primary">ดูผลลัพธ์จริง</a>
+</article>
+
+        <article id="work7" class="project-item">
+    <h3>ข้อที่ 7: การใช้ Flexbox เบื้องต้น</h3>
+    <img src="ex7.png" alt="ตัวอย่างงานข้อ 7" class="project-img">
+    
+    <div class="code-window">
+        <div class="code-header"><span>index.html</span></div>
+        <pre><code>&lt;nav class="navbar"&gt;
+    &lt;div class="logo"&gt;MyBrand&lt;/div&gt;
+    &lt;ul class="nav-links"&gt;
+        &lt;li&gt;Home&lt;/li&gt;
+        &lt;li&gt;About&lt;/li&gt;
+        &lt;li&gt;Contact&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+    </div>
+    <div class="action-buttons">
+    <a href="exr7.html" class="action-btn primary">ดูผลลัพธ์จริง</a>
+</article>
+
+    <div class="code-window">
+        <div class="code-header"><span>style.css</span></div>
+        <pre><code>.navbar {
+    display: flex; /* เปิดใช้งาน Flexbox */
+    justify-content: space-between; /* จัดวางให้อยู่ซ้ายสุดและขวาสุด */
+    align-items: center; /* จัดให้เนื้อหาอยู่กึ่งกลางแนวตั้ง */
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex; /* เรียงรายการเมนูเป็นแนวนอน */
+    gap: 20px; /* เว้นระยะห่างระหว่างเมนู */
+    list-style: none;
+}</code></pre>
+    </div>
+    <div class="action-buttons">
+    <a href="exr7.html" class="action-btn primary">ดูผลลัพธ์จริง</a>
+</article>
+
+       <article id="work8" class="project-item">
+    <h3>ข้อที่ 8: การทำ Progress Bar</h3>
+    <img src="ex8.png" alt="ตัวอย่างงานข้อ 8" class="project-img">
+    
+    <div class="code-window">
+        <div class="code-header"><span>index.html</span></div>
+        <pre><code>&lt;div class="progress-container"&gt;
+    &lt;div class="skill-info"&gt;
+        &lt;span&gt;HTML &amp; CSS&lt;/span&gt;
+        &lt;span&gt;80%&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="progress-bar"&gt;
+        &lt;div class="progress-fill" style="width: 80%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    <div class="action-buttons">
+    <a href="exr8.html" class="action-btn primary">ดูผลลัพธ์จริง</a>
+</article>
+
+    <div class="code-window">
+        <div class="code-header"><span>style.css</span></div>
+        <pre><code>.progress-bar {
+    background: #ddd; /* สีพื้นหลังของแถบ */
+    border-radius: 10px;
+    height: 12px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #007bff; /* สีของพลังที่เติมเข้ามา */
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}</code></pre>
+    </div>
+</article>
+    </div>
+</section>
+                </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>ติดต่อผม (Contact Me)</h2>
+            <div class="contact-card">
+                <form class="contact-form">
+                    <input type="text" placeholder="ชื่อของคุณ" required>
+                    <input type="email" placeholder="อีเมลของคุณ" required>
+                    <textarea placeholder="ข้อความถึงผม" required></textarea>
+                    <button type="submit" class="modern-button">ส่งข้อความ</button>
+                </form>
+                <div class="social-links">
+                    <p>หรือติดตามช่องทางอื่นๆ:</p>
+                    <a href="https://www.facebook.com/thanyathep.anantamat" target="_blank">Facebook</a>
+                    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Thanyathep Anantamat. All rights reserved.</p>
+    </footer>
+</body>
+</html>
