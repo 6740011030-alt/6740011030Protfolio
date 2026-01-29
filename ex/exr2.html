@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="th">
-    <link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>โปรไฟล์ของฉัน - ข้อที่ 2</title>
+    
     <style>
-        /* ตกแต่งพื้นหลังและฟอนต์ */
+        /* --- 1. ส่วนตกแต่งเนื้อหาเดิม (Profile Card) --- */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f2f5;
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* จัดเรียงแนวตั้ง เพื่อให้ปุ่มอยู่ใต้การ์ด */
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            padding: 20px;
         }
 
-        /* การ์ดโปรไฟล์ */
         .profile-card {
             background: white;
             padding: 40px;
@@ -26,9 +26,9 @@
             max-width: 400px;
             text-align: center;
             width: 100%;
+            margin-bottom: 30px; /* ดันปุ่มลงไปหน่อย */
         }
 
-        /* รูปโปรไฟล์วงกลม */
         .profile-img {
             width: 150px;
             height: 150px;
@@ -38,30 +38,21 @@
             margin-bottom: 20px;
         }
 
-        /* หัวข้อ */
         h1 { color: #333; margin-bottom: 5px; font-size: 24px; }
         h2 { color: #007bff; font-size: 18px; margin-top: 25px; border-bottom: 2px solid #eee; padding-bottom: 10px; display: inline-block; }
         p { color: #666; line-height: 1.6; font-size: 14px; }
 
-        /* ตกแต่งรายการ (Lists) ซึ่งเป็นหัวใจของข้อ 2 */
         ul {
             text-align: left;
             background-color: #f9f9f9;
-            padding: 20px 20px 20px 40px; /* เว้นซ้ายเยอะหน่อยสำหรับ Bullet */
+            padding: 20px 20px 20px 40px;
             border-radius: 10px;
             margin-top: 10px;
         }
 
-        li {
-            margin-bottom: 10px;
-            color: #444;
-            font-weight: 500;
-        }
-        
-        /* เปลี่ยนสี Bullet Points */
+        li { margin-bottom: 10px; color: #444; font-weight: 500; }
         li::marker { color: #007bff; font-size: 1.2em; }
 
-        /* ปุ่มลิงก์ */
         .social-links a {
             text-decoration: none;
             color: white;
@@ -75,6 +66,39 @@
         .social-links a.fb { background-color: #1877f2; }
         .social-links a.yt { background-color: #ff0000; }
         .social-links a:hover { opacity: 0.8; transform: translateY(-2px); display: inline-block; }
+
+        /* --- 2. ส่วนตกแต่งปุ่ม "กลับหน้าหลัก" (เพิ่มใหม่) --- */
+        .action-buttons {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .action-btn {
+            display: inline-block;
+            padding: 12px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .action-btn.secondary {
+            background-color: #ffffff;
+            color: #333;
+            border: 2px solid #e0e0e0;
+        }
+
+        .action-btn.secondary:hover {
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
     </style>
 </head>
 <body>
@@ -104,8 +128,10 @@
             <a href="https://www.youtube.com" target="_blank" class="yt">YouTube</a>
         </div>
     </div>
-<div class="action-buttons">
-    <a href="../index.html" class="action-btn secondary">กลับหน้าหลัก</a>
-</div>
+
+    <div class="action-buttons">
+        <a href="../index.html" class="action-btn secondary">กลับหน้าหลัก</a>
+    </div>
+
 </body>
 </html>

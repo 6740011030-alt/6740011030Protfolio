@@ -285,3 +285,40 @@ footer {
     background-color: #ddd;
     transform: translateY(-2px);
 }
+/* ...ต่อจาก .footer-text ... */
+
+        /* จัดกล่องปุ่มให้อยู่กึ่งกลาง */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            padding-bottom: 40px; /* เว้นระยะด้านล่างหน่อย */
+        }
+
+        /* ตกแต่งตัวปุ่ม */
+        .action-btn {
+            display: inline-block;
+            padding: 12px 30px;    /* ปรับขนาดปุ่ม */
+            border-radius: 50px;   /* ทำปุ่มมนแบบแคปซูล */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* สไตล์ปุ่มแบบ Secondary (สีขาว/เทา) */
+        .action-btn.secondary {
+            background-color: #ffffff;
+            color: #333;
+            border: 2px solid #ddd;
+        }
+
+        /* เอฟเฟกต์ตอนเอาเมาส์ชี้ */
+        .action-btn.secondary:hover {
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
+            transform: translateY(-3px); /* ลอยขึ้นนิดนึง */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar Example - ข้อที่ 8</title>
+    <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column; /* จัดเรียงแนวตั้ง: Progress Bar บน, ปุ่มล่าง */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            gap: 30px; /* เว้นระยะห่างระหว่างกล่อง Progress กับปุ่ม */
+        }
+
+        .progress-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* รางของแถบพลัง */
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 20px;
+            height: 20px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* สีที่เติมเต็ม (Level) */
+        .progress-fill {
+            background-color: #007bff;
+            height: 100%;
+            border-radius: 20px;
+            transition: width 1s ease-in-out;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        /* --- ส่วนตกแต่งปุ่มกลับหน้าหลัก (เพิ่มใหม่) --- */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .action-btn {
+            display: inline-block;
+            padding: 12px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .action-btn.secondary {
+            background-color: #ffffff;
+            color: #333;
+            border: 2px solid #e0e0e0;
+        }
+
+        .action-btn.secondary:hover {
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress-container">
+        <div class="skill-info">
+            <span>HTML & CSS</span>
+            <span>80%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 80%;"></div>
+        </div>
+        
+        <br> 
+        
+        <div class="skill-info">
+            <span>JavaScript</span>
+            <span>45%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 45%; background-color: #28a745;"></div>
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <a href="../index.html" class="action-btn secondary">กลับหน้าหลัก</a>
+    </div>
+
+</body>
+</html>

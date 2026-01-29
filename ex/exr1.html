@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="th">
-    <link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>บล็อกโพสต์ของฉัน</title>
+    <link rel="stylesheet" href="../style.css"> 
+    
     <style>
-        /* ตกแต่งส่วนพื้นฐาน */
+        /* --- 1. ส่วนตกแต่งเนื้อหาเดิม --- */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
-            background-color: #f4f7f6; /* พื้นหลังสีเทาอ่อนช่วยให้สบายตา */
+            background-color: #f4f7f6;
             color: #333;
             margin: 0;
             padding: 20px;
         }
 
-        /* จัดระเบียบกล่องเนื้อหาหลัก */
         main {
             max-width: 700px;
             margin: 0 auto;
@@ -26,12 +26,10 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
 
-        /* ตกแต่งหัวข้อ */
         h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
         h2 { color: #2980b9; margin-top: 30px; }
         h3 { color: #16a085; }
 
-        /* จัดการรูปภาพ */
         img {
             max-width: 100%;
             height: auto;
@@ -41,18 +39,54 @@
             border: 1px solid #ddd;
         }
 
-        /* ตกแต่งรายการ */
         ul, ol { background: #f9f9f9; padding: 20px 40px; border-radius: 8px; }
         li { margin-bottom: 8px; }
 
-        /* ตกแต่งลิงก์ */
         a { color: #3498db; text-decoration: none; font-weight: bold; }
         a:hover { text-decoration: underline; }
 
         .footer-text { font-style: italic; color: #7f8c8d; text-align: center; margin-top: 30px; }
+
+        /* --- 2. ส่วนตกแต่งปุ่ม "กลับหน้าหลัก" (เพิ่มใหม่) --- */
+        .action-buttons {
+            display: flex;
+            justify-content: center; /* จัดปุ่มให้อยู่กึ่งกลาง */
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .action-btn {
+            display: inline-block;
+            padding: 12px 35px;      /* เพิ่มความกว้างให้กดง่าย */
+            border-radius: 50px;     /* ขอบมนทรงแคปซูล */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease; /* เอฟเฟกต์นุ่มนวลเวลาชี้ */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        /* สไตล์ปุ่มสีขาว (Secondary) */
+        .action-btn.secondary {
+            background-color: #ffffff;
+            color: #333;
+            border: 2px solid #e0e0e0;
+        }
+
+        /* เอฟเฟกต์เมื่อเอาเมาส์ชี้ (Hover) */
+        .action-btn.secondary:hover {
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
+            transform: translateY(-3px); /* ลอยขึ้นเล็กน้อย */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            text-decoration: none; /* ไม่ให้มีขีดเส้นใต้ตอนชี้ */
+        }
     </style>
 </head>
 <body>
+
     <main>
         <h1>วันแรกของการเรียนรู้ HTML</h1>
 
@@ -82,8 +116,10 @@
         
         <p class="footer-text">นี่คือการฝึกเขียน HTML ครั้งแรกของผม</p>
     </main>
+    
+    <div class="action-buttons">
+        <a href="../index.html" class="action-btn secondary">กลับหน้าหลัก</a>
+    </div>
+
 </body>
-<div class="action-buttons">
-    <a href="../index.html" class="action-btn secondary">กลับหน้าหลัก</a>
-</div>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Button CSS - ข้อที่ 5</title>
+    
+    <style>
+        /* จัดให้อยู่กึ่งกลางหน้าจอเพื่อความสวยงาม */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column; /* จัดเรียงแนวตั้ง */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            gap: 20px;
+        }
+
+        /* --- โค้ด CSS ปุ่ม Modern Button ของคุณ --- */
+        .modern-button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .modern-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+        }
+
+        /* --- ส่วนตกแต่งปุ่มกลับหน้าหลัก (เพิ่มใหม่) --- */
+        .action-buttons {
+            margin-top: 20px; /* เว้นระยะห่างจากปุ่มตัวอย่าง */
+        }
+
+        .action-btn {
+            display: inline-block;
+            padding: 12px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .action-btn.secondary {
+            background-color: #ffffff;
+            color: #333;
+            border: 2px solid #e0e0e0;
+        }
+
+        .action-btn.secondary:hover {
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ตัวอย่างปุ่ม Modern Button</h2>
+    
+    <button class="modern-button">คลิกที่นี่ (Click Me)</button>
+
+    <div class="action-buttons">
+        <a href="../index.html" class="action-btn secondary">กลับหน้าหลัก</a>
+    </div>
+
+</body>
+</html>
